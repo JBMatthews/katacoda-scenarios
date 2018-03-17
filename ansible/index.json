@@ -3,7 +3,7 @@
     "description": "Getting Started With Ansible",
     "difficulty": "beginner",
     "time": "15 minutes",
-    "icon": "fa-node",
+    "icon": "fa-ansible",
     "authenticated": false,
     "details": {
     "steps": [{
