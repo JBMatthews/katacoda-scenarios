@@ -1,7 +1,9 @@
 {
+    "title": "Ansible",
+    "description": "Getting Started With Ansible",
+    "difficulty": "beginner",
+    "time": "15 minutes",
     "icon": "fa-node",
-    "title": "Scenario with Editor UI",
-    "description": "Katacoda Scenario Example",
     "authenticated": false,
     "details": {
         "steps": [
@@ -24,4 +26,34 @@
     "backend": {
         "image": "node"
     }
+}
+
+
+
+
+{
+  "title": "Ansible",
+  "description": "Getting Started With Ansible",
+  "difficulty": "beginner",
+  "time": "15 minutes",
+  "details": {
+    "steps": [{
+      "title": "Step 1 - Run Command",
+      "text": "step1.md"
+    }],
+    "intro": {
+      "text": "intro.md",
+      "credits": ""
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "uilayout": "terminal",
+    "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\u001b[m\r\n"
+  },
+  "backend": {
+    "imageid": "bash"
+  }
 }
