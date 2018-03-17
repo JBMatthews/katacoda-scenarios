@@ -26,8 +26,7 @@
         "uilayout": "editor-terminal",
         "uisettings": "javascript",
         "uimessage1": "\u001b[32mYour Interactive Bash Terminal. A safe place to learn and execute commands.\u001b[m\r\n",
-        "uilayout": "terminal",
-        "uimessage2": "\u001b[32mYour Interactive Bash Terminal.\u001b[m\r\n"
+
     },
     "backend": {
         "image": "node",
