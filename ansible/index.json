@@ -3,7 +3,7 @@
     "description": "Getting Started With Ansible",
     "difficulty": "beginner",
     "time": "15 minutes",
-    "icon": "fa-node",
+    "icon": "fa-connectdevelop",
     "authenticated": false,
     "details": {
     "steps": [{
@@ -18,20 +18,16 @@
     "finish": {
       "title": "Finish",
       "text": "finish.md"
-    }
-  },
+    },
     "environment": {
         "hideintro": true,
         "hidefinish": true,
         "uilayout": "editor-terminal",
         "uisettings": "javascript",
-        "uimessage1": "\u001b[32mYour Interactive Bash Terminal. A safe place to learn and execute commands.\u001b[m\r\n",
-        "uilayout": "terminal",
-        "uimessage2": "\u001b[32mYour Interactive Bash Terminal.\u001b[m\r\n"
+        "uimessage1": "\u001b[32mYour Interactive Bash Terminal. A safe place to learn and execute commands.\u001b[m\r\n"
     },
     "backend": {
         "image": "node",
         "imageid": "bash"
-
     }
 }
