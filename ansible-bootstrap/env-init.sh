@@ -1,9 +1,5 @@
-# Shared Volumes
-mkdir shared_volume  
-docker pull williamyeh/ansible:ubuntu14.04-onbuild  
-docker pull ubuntu:14.04  
-docker network create mynetwork  
-cd shared_volume 
+#General
+apt install update
 
 # Git 
 # Install
@@ -11,11 +7,21 @@ apt-get install -y git
 # Clone
 git clone https://github.com/JBMatthews/ansible-lab-setup.git
 # Copy payload to 'ansible' node
-cp ./ansible-lab-setup 
+# cp ./ansible-lab-setup 
+
+# Shared Volumes
+mkdir shared_volume  
+docker pull williamyeh/ansible:ubuntu14.04-onbuild  
+docker pull ubuntu:14.04  
+docker network create mynetwork  
+cd shared_volume 
+
+cp ../ansible-lab-setup .
+
 
 # Launch Containers
-docker run --rm williamyeh/ansible:ubuntu14.04-onbuild echo hallo  
-docker run --rm ubuntu:14.04 echo hallo  
+docker run --rm williamyeh/ansible:ubuntu14.04-onbuild echo hello!  
+docker run --rm ubuntu:14.04 echo hello!  
 # Ansible
 docker run -d --name ansible --rm --network mynetwork -v $(pwd):/shared_volume williamyeh/ansible:ubuntu14.04-onbuild /bin/bash -c 'while true; do sleep 60; echo keepalive; done'  
 #Target
