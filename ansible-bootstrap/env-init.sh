@@ -1,4 +1,3 @@
-apt-get -y update
 apt install -y git
 mkdir shared_volume  
 docker pull williamyeh/ansible:ubuntu14.04-onbuild  
