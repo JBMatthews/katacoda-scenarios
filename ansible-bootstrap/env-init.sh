@@ -16,12 +16,12 @@ docker pull ubuntu:14.04
 docker network create mynetwork  
 cd shared_volume 
 
-cp ../ansible-lab-setup .
+cp ../ansible-lab-setup ./shared_volume
 
 
 # Launch Containers
-docker run --rm williamyeh/ansible:ubuntu14.04-onbuild echo hello!  
-docker run --rm ubuntu:14.04 echo hello!  
+docker run --rm williamyeh/ansible:ubuntu14.04-onbuild echo hello
+docker run --rm ubuntu:14.04 echo hello
 # Ansible
 docker run -d --name ansible --rm --network mynetwork -v $(pwd):/shared_volume williamyeh/ansible:ubuntu14.04-onbuild /bin/bash -c 'while true; do sleep 60; echo keepalive; done'  
 #Target
