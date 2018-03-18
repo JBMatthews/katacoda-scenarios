@@ -1,7 +1,6 @@
 apt-get -y update
 apt install -y git
 cd /home/scrapbook/tutorial
-git clone https://github.com/JBMatthews/ansible-lab-setup
 mkdir shared_volume  
 docker pull jamesbe/ansible-node-ubuntu  
 docker pull ubuntu:14.04  
