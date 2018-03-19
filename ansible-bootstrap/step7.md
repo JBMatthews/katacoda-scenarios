@@ -30,7 +30,7 @@ The output should be
 hello world!
 </pre>
 
-But, that's no fun. Can't we verify that same inforamtion from our ansible host? And the answer is yes!
+But, that's no fun. Can't we verify that same inforamtion from our ansible host, also? And the answer is yes!
 
 So, let's now log back out of our current host instance, which in this case should be the target host, and then log back into our ansible host, again:
 
@@ -40,6 +40,6 @@ So, let's now log back out of our current host instance, which in this case shou
 
 And finally, print out the contends of the test file, from our ansible host, just like this:
 
-`ansible all -i 'target,' -m 'shell cat ~/testfile'`{{execute HOST1}}
+`ansible all -i 'target,' -m shell -a "cat ~/testfile"`{{execute HOST1}}
 
 > Success!
