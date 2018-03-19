@@ -1,4 +1,4 @@
-Now let us perform the first remote shell command.
+Now we can perform the first remote shell command!
 
 Now, since the target knows about the Ansible host's public SSH key, we are ready to connect from the Ansible host to our target:
  
