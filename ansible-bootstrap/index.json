@@ -38,7 +38,7 @@
 		}
 	},
 	"files": [
-    	  "test.txt"
+    	  	"test.txt"
   	],
 	"environment": {
 		"showdashboard": true,
