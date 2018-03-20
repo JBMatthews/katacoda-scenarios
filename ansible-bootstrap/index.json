@@ -36,10 +36,10 @@
 		"finish": {
 			"text": "finish.md"
 		}
+	},
 	"files": [
     	  "test.txt"
   	],
-	},
 	"environment": {
 		"showdashboard": true,
 		"uilayout": "editor-terminal",
