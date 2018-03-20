@@ -40,9 +40,7 @@
           	  "host01": [{"file": "test.txt", "target": "/root/"}]
         	}
 	},
-	"files": [
-    	  	"test.txt"
-  	],
+	
 	"environment": {
 		"showdashboard": true,
 		"dashboards": [{"name": "Localhost", "port": 8080}, {"name": "Port80", "port": 80}],
