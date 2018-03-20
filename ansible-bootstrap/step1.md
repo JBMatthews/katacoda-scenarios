@@ -19,4 +19,4 @@ c96e3a45e164      ubuntu:14.04                            "/bin/bash -c 'whi..."
 caf61a258abb      virtuant/ansible-node-ubuntu14.04:v1    "/bin/bash -c 'whi..."  13 seconds ago  Up 11 seconds ansible
 </pre>
 
-This should take no longer than 30 sec.
+This can take as long than a minute. Be patient, sit back, and watch the magic happen! 
