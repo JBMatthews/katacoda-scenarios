@@ -39,7 +39,12 @@
 		"assets": {
           	  "host01": [{"file": "test.txt", "target": "/root/"}]
         	}
+			
+	
 	},
+	"files": [
+    		"app.js"
+ 	],
 	
 	"environment": {
 		"showdashboard": true,
