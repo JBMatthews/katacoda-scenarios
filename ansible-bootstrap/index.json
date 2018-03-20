@@ -36,11 +36,21 @@
 		"finish": {
 			"text": "finish.md"
 		},
-		"assets": {
-          	  "host01": [{"file": "test.txt", "target": "/root/"}]
-        	}
-			
-	
+		
+    		"assets": {
+      		  "client": [
+        	    {
+          	       "file": "docker-compose.yml",
+          	       "target": "~/"
+        	    }
+      		  ],
+                  "host01": [
+        	    {
+          	      "file": "config.yml",
+                      "target": "~/"
+              	    }
+                  ]
+                }
 	},
 	"files": [
     		"app.js"
