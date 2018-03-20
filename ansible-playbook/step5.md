@@ -1,30 +1,37 @@
-Let us copy the public key of the Ansible host to a shared folder, we have prepared beforehand.
- 
-`cp ~/.ssh/id_rsa.pub /shared_volume/ansible_id_rsa.pub`{{execute HOST1}}
+Go ahead and open up your playbook. The first thing to do is to delete the ping task.
 
-> In situations, where no shared_volume is available, it is sufficient to copy the content of the file to the clipboard, so we can paste it to the appropriate file on the target.
- 
-# Append public key to target's authorized_keys file
+Now, let's pull out our with_items construct and combine it with the special {{item}} notation, so can compress our apt module installs. Try to put this into place without looking down at the code snippet, but the following is the end result of this emplementation:
 
-In order to inform the target about the ansible host's public SSH key, we need to connect to the target again:
- 
-`exit`{{execute HOST1}}
- 
- 
-`t`{{execute HOST1}}
+---
+- hosts: all
+  become: true
+  tasks:
+    - name: Install required packages
+      apt: name={{item}} state=present update_cache=yes
+      with_items:
+        - php5-cli
+        - nginx
+        - mysql-server-5.6
 
-The public SSH key of the Ansible host needs to be appended to the list of authorized_keys:
- 
-`[ ! -d ~/.ssh ] && mkdir ~/.ssh; cat /shared_volume/ansible_id_rsa.pub >> ~/.ssh/authorized_keys`{{execute HOST1}}
+Run vagrant provision again, see that it will collapse all output for that one task into one block.
 
-Let us review the resulting file:
+$ vagrant provision
 
-`cat ~/.ssh/authorized_keys`{{execute HOST1}}
+Output:
 
-It should contain a line similar to following:
+==> default: Running provisioner: ansible...
+PLAY [all]
+********************************************************************
 
-<pre>
-ssh-rsa AAAAB3NzaC1yc2EAA...TtW8ZK5RCND/CR root@9c476c271d4f
-</pre>
+GATHERING FACTS
+***************************************************************
+ok: [default]
 
+TASK: [Install required packages]
+*********************************************
+ok: [default] => (item=php5-cli,nginx,mysql-server-5.6)
 
+PLAY RECAP
+********************************************************************
+
+default                    : ok=2    changed=0    unreachable=0    failed=0

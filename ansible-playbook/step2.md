@@ -1,47 +1,82 @@
-# Check Ansible Version
+Let’s add PHP by adding another module entry, like ping: to the playbook.yml file, so that it looks like the following:
 
-As soon as the ansible container are seen in the docker ps command, we should be able to connect to the Ansible container using our definition from the previous step:
+---
+- hosts: all
+  tasks:
+    - name: Make sure that we can connect to the machine
+      ping:
+    - name: Install PHP
+      apt: name=php5-cli state=present update_cache=yes
 
-`a`{{execute HOST1}}
+Previously, you used the ping module to connect to your machine. This time, you’ll be using the apt module.
 
-Let us verify the Ansible installation by running the command:
+2. If you run vagrant provision again, it should attempt to install the php5 package. Unfortunately, it will fail, giving a message such as the following:
 
-`ansible --version`{{execute HOST1}}
+$ vagrant provision
 
-The output should look similar to:
-<pre>
-ansible 2.3.0.0
-  config file = /etc/ansible/ansible.cfg
-  configured module search path = Default w/o overrides
-  python version = 2.7.6 (default, Oct 26 2016, 20:30:19) [GCC 4.8.4]
-</pre>
+Output:
 
-# Check Local Execution
+...
 
-We now can "ping" our local machine:
+TASK [Make sure that we can connect to the machine] ****************************
+ok: [default]
 
-`ansible all -i 'localhost,' -c local -m ping`{{execute HOST1}}
+TASK [Install PHP] *************************************************************
+fatal: [default]: FAILED! => {"changed": false, "failed": true, "msg": "Failed to lock apt for exclusive operation"}
+	to retry, use: --limit @path/to/playbook.retry
 
-> Note that an ansible ping is not an ICMP request, as you might expect. Instead, it is a test of the SSH connection. However, above we have used an Ansible command with `-c local` option. This option tells Ansible to bypass the network, so the Ansible client can execute local commands without the need of any SSH connection.
+PLAY RECAP *********************************************************************
+default                    : ok=2    changed=0    unreachable=0    failed=1   
 
-# Check Remote Connections
-The same Ansible ping will fail, if run it without the `-c local` flag:
+Ansible failed to complete successfully. Any error output should be
+visible above. Please fix these errors and try again.
 
-`ansible all -i 'localhost,' -m ping`{{execute HOST1}}
+3. Ansible basically needs to sudo this command! However, let's add it to the playbook in such a way that the permission granted, can be reused by other commands. You'll do that by adding become: true to our playbook, like this:
 
-This will lead to following error:
+---
+- hosts: all
+  become: true
+  tasks:
+    - name: Make sure that we can connect to the machine
+      ping:
+    - name: Install PHP
+      apt: name=php5-cli state=present update_cache=yes
 
-<pre style="color: red"> localhost | UNREACHABLE! => {
-    "changed": false,
-    "msg": "Failed to connect to the host via ssh: ssh: connect to host localhost port 22: Connection refused\r\n",
-    "unreachable": true
-}
-</pre>
+4. Once you’ve saved this change, run vagrant provision again. Ansible should tell you that PHP was installed successfully:
 
-The same will occur, when wir specify our remote target instead of 'localhost ...
+$ vagrant provision
 
-`ansible all -i 'target,' -m ping`{{execute HOST1}}
+5. You can add more steps to install nginx and mySQL by adding more calls to the apt module saying that you expect nginx and mysql-server-5.6 to be present.
 
-...and accept the SSH fingerprint with `yes`{{execute HOST1}}
+---
+- hosts: all
+  become: true
+  tasks:
+    - name: Make sure that we can connect to the machine
+      ping:
+    - name: Install PHP
+      apt: name=php5-cli state=present update_cache=yes
+    - name: Install nginx
+      apt: name=nginx state=present
+    - name: Install mySQL
+      apt: name=mysql-server-5.6 state=present
 
-We will resolve this issue during the next steps.
+6. As with the php5-cli package, this should show up in your Ansible output when you run vagrant provision again:
+
+$ vagrant provision
+
+Output:
+
+...
+
+TASK [Install PHP] *************************************************************
+ok: [default]
+
+TASK [Install nginx] ***********************************************************
+changed: [default]
+
+TASK [Install mySQL] ***********************************************************
+changed: [default]
+
+PLAY RECAP *********************************************************************
+default        : ok=5    changed=2    unreachable=0    failed=0
