@@ -36,6 +36,9 @@
 		"finish": {
 			"text": "finish.md"
 		}
+	"files": [
+    	  "test.txt"
+  	],
 	},
 	"environment": {
 		"showdashboard": true,
