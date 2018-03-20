@@ -1,8 +1,8 @@
 {
-	"title": "Ansible Bootstrapping",
-	"description": "Learn how to connect to a target",
-	"difficulty": "advanced",
-	"time": "15-20 minutes",
+	"title": "Your Ansible Environment Setup",
+	"description": "Understanding how your environment has been made, before we begin",
+	"difficulty": "Advanced",
+	"time": "15-20 M  inutes",
 	"details": {
 
 		"steps": [{
@@ -36,12 +36,16 @@
 		"finish": {
 			"text": "finish.md"
 		}
+		"assets": {
+          	  "host01": [{"file": "test.txt", "target": "/root/"}]
+        	}
 	},
 	"files": [
     	  	"test.txt"
   	],
 	"environment": {
 		"showdashboard": true,
+		"dashboards": [{"name": "Localhost", "port": 8080}, {"name": "Port80", "port": 80}],
 		"uilayout": "editor-terminal",
 		"uimessage1": "\u001b[32mYour Interactive Docker Host Terminal.\u001b[m\r\n"
 	},
