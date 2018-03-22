@@ -39,8 +39,8 @@
 	},
 	"environment": {
 		"showdashboard": true,
-        "dashboards": [{"name": "Localhost", "port": 8080}, {"name": "Port80", "port": 80}],
-        "uilayout": "editor-terminal",
+        	"dashboards":  "Dashboard",
+        	"uilayout": "editor-terminal",
 		"uimessage1": "\u001b[32mYour Interactive Docker Host Terminal.\u001b[m\r\n"
 	},
 	"backend": {
