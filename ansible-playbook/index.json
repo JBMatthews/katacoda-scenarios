@@ -35,34 +35,20 @@
         },
         "finish": {
             "text": "finish.md"
-        },
-        "assets": {
-            "client": [
-        {
-          "file": "docker-compose.yml",
-          "target": "~/"
-        }
-      ],
-      "host01": [
-        {
-          "file": "config.yml",
-          "target": "~/"
         }
       ]
     }
   },
   "files": [
-    "app.js"
+    "invebtory.yml"
     ],
   "environment": {
         "showdashboard": true,
         "dashboards": [{"name": "Port80", "port": 80}, {"name": "Port8080", "port": 8080}],
-        "dashboard": "Dashboard",
         "uilayout": "editor-terminal",
         "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\u001b[m\r\n"
     },
     "backend": {
         "imageid": "docker",
-        "port": 8080
     }
 }
