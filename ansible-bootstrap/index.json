@@ -42,24 +42,7 @@
       "finish": {
 	"text": "finish.md"
       },
-      "assets": {
-        "client": [
-          {
-            "file": "docker-compose.yml",
-            "target": "~/"
-          }
-        ],
-        "host01": [
-          {
-            "file": "config.yml",
-            "target": "~/"
-          }
-        ]
-      }
-   },
-   "files": [
-     "app.js"
-   ],
+	   
    "environment": {
      "showdashboard": true,
      "dashboards": [{"name": "Localhost", "port": 8080}, {"name": "Port80", "port": 80}],
