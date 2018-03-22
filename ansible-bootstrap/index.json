@@ -38,10 +38,17 @@
 		}
 	},
 	"environment": {
+<<<<<<< HEAD
         "showdashboard": true,
         "dashboards": [{"name": "Localhost", "port": 8080}, {"name": "Port80", "port": 80}],
         "uilayout": "editor-terminal",
         "uimessage1": "\u001b[32mYour Interactive Docker Host Terminal.\u001b[m\r\n"
+=======
+		"showdashboard": true,
+        	"dashboards":  "Dashboard",
+        	"uilayout": "editor-terminal",
+		"uimessage1": "\u001b[32mYour Interactive Docker Host Terminal.\u001b[m\r\n"
+>>>>>>> b8307e75168a2e015a67b33b33f8becba5c65dc5
 	},
 	"backend": {
 		"imageid": "docker"
