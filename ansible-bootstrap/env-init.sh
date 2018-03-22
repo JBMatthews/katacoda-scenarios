@@ -2,7 +2,7 @@ apt-get -y update
 apt install -y git
 cd /home/scrapbook/tutorial
 mkdir shared_volume  
-docker pull virtuant/ansible-node-ubuntu14.04:v2  
+docker pull virtuant/ansible-node:v2  
 docker pull ubuntu:14.04  
 docker network create mynetwork  
 cd shared_volume
