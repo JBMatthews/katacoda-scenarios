@@ -1,0 +1,43 @@
+{
+    "icon": "fa-coffee",
+    "title": "Ansible Scenario with Editor UI",
+    "description": "Katacoda Scenario Example",
+    "authenticated": false,
+    "details": {
+
+  		"steps": [{
+  			"title": "Step 1 - Prepare Environment for easier Toggling between Ansible and Target System",
+  			"text": "step1.md"
+  		}, {
+  			"title": "Step 2 - Verify the Ansible Installation",
+  			"text": "step2.md"
+  		}, {
+  			"title": "Step 3 - Prepare Remote Target: Install SSH",
+  			"text": "step3.md"
+  		}, {
+  			"title": "Step 4 - Prepare Remote Connection: Create SSH Key on Ansible Host",
+  			"text": "step4.md"
+  		}, {
+  			"title": "Step 5 - Prepare Remote Connection: Transfer SSH public Key to Target",
+  			"text": "step5.md"
+  		}, {
+  			"title": "Step 6 - Connect from Ansible host to Target",
+  			"text": "step6.md"
+  		}, {
+  			"title": "Step 7 - Remotely Perform a Shell Command on the Target",
+  			"text": "step7.md"
+  		}
+        ]
+    },
+    "environment": {
+      "showdashboard": true,
+      "dashboard": "Dashboard",
+      "uilayout": "terminal-iframe",
+        "uisettings": "bash",
+        "uimessage1": "\u001b[32mYour Interactive Bash Terminal. A safe place to learn and execute commands.\u001b[m\r\n"
+    },
+    "backend": {
+        "imageid": "ansible",
+        "port": 8080
+    }
+}

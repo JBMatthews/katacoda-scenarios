@@ -36,11 +36,7 @@
         "finish": {
             "text": "finish.md"
         }
-    }
   },
-  "files": [
-    "invebtory.yml"
-    ],
   "environment": {
         "showdashboard": true,
         "dashboards": [{"name": "Port80", "port": 80}, {"name": "Port8080", "port": 8080}],
