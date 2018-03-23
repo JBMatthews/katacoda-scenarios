@@ -37,6 +37,7 @@
     },
     "backend": {
         "imageid": "ansible",
-        "port": 8080
+        "port": 8080,
+        "port": 80
     }
 }
