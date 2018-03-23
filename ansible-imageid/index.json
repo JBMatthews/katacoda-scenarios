@@ -1,7 +1,6 @@
 {
-    "icon": "fa-coffee",
-    "title": "Ansible Scenario with Editor UI",
-    "description": "Katacoda Scenario Example",
+    "title": "Ansible ImageId",
+    "description": "Ansible Evironment Example",
     "authenticated": false,
     "details": {
 
@@ -38,6 +37,7 @@
     },
     "backend": {
         "imageid": "ansible",
-        "port": 8080
+        "port": 8080,
+        "port": 80
     }
 }
