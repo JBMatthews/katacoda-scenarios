@@ -1,6 +1,5 @@
 {
-    "icon": "fa-coffee",
-    "title": "Ansible Scenario with Editor UI",
+    "title": "Ansible ImageId",
     "description": "Katacoda Scenario Example",
     "authenticated": false,
     "details": {
