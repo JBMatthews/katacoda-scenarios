@@ -39,9 +39,11 @@
 			"text": "finish.md"
 		}
 	},
+	"files": [
+    		"app.js"
+  	],
 	"environment": {
 		"showdashboard": true,
-		"dashboard": "Dashboard",
 		"uilayout": "terminal-iframe",
 		"uimessage1": "\u001b[32mYour Interactive Docker Host Terminal.\u001b[m\r\n"
 	},
