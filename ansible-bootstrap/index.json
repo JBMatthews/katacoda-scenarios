@@ -39,10 +39,11 @@
 			"text": "finish.md"
 		},
 		"assets": {
-		      "host01": [
+		      "client": [
 		        {
 		          "file": "*",
-		          "target": "~/"
+		          "target": "/home/scrapbook/tutorial/",
+							"chmod": "+x"
 		        }
 		      ]
 		    }
