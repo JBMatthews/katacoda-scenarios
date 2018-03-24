@@ -1,7 +1,7 @@
 apt -y update
 apt install software-properties-common
 apt-add-repository ppa:ansible/ansible
-apt update
+apt -y update
 apt install -y ansible
 apt install -y git
 cd /home/scrapbook/tutorial
