@@ -37,11 +37,19 @@
 		},
 		"finish": {
 			"text": "finish.md"
-		}
+		},
+		"assets": {
+		      "host01": [
+		        {
+		          "file": "*",
+		          "target": "~/"
+		        }
+		      ]
+		    }
 	},
 	"files": [
         	"playbook.yml",
-					"inventory"
+            "inventory"
     	],
 	"environment": {
 		"showdashboard": true,
