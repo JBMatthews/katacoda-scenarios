@@ -1,14 +1,14 @@
-ssh root@host01 "apt-get -y update"
-ssh root@host01 "apt-get install -y software-properties-common"
-ssh root@host01 "apt-add-repository -y ppa:ansible/ansible"
-ssh root@host01 "apt-get -y update"
-ssh root@host01 "apt-get install -y ansible"
-ssh root@host01 "apt-get install -y git"
-ssh root@host01 "cd /home/scrapbook/tutorial"
-ssh root@host01 "mkdir shared_volume"
-ssh root@host01 "docker pull virtuant/ansible-node:v2"
-ssh root@host01 "docker pull ubuntu:14.04"
-ssh root@host01 "docker network create mynetwork"
-ssh root@host01 "cd shared_volume"
-ssh root@host01 "docker run -d --name ansible --rm --network mynetwork -v $(pwd):/shared_volume virtuant/ansible-node:v2"
-ssh root@host01 "docker run -d --name target -p 8080 --rm --network mynetwork -v $(pwd):/shared_volume ubuntu:14.04"
+apt-get -y update
+apt-get install -y software-properties-common
+apt-add-repository -y ppa:ansible/ansible
+apt-get -y update
+apt-get install -y ansible
+apt-get install -y git
+cd /home/scrapbook/tutorial
+mkdir shared_volume
+docker pull virtuant/ansible-node:v2
+docker pull ubuntu:14.04
+docker network create mynetwork
+cd shared_volume
+docker run -d --name ansible --rm --network mynetwork -v $(pwd):/shared_volume virtuant/ansible-node:v2
+docker run -d --name target -p 8080 --rm --network mynetwork -v $(pwd):/shared_volume ubuntu:14.04
