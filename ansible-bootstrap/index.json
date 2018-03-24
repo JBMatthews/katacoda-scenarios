@@ -40,17 +40,24 @@
 		}
 	},
 	"files": [
+<<<<<<< HEAD
     		"notes"
   	],
 	"environment": {
 		"showdashboard": true,
         "Dashbaord": "Dashboard",
 		"uilayout": "terminal-iframe",
+=======
+    		"hosts"
+  	],
+	"environment": {
+		"showdashboard": true,
+		"dashboards": [{"name": "localhost", "port": 8080}],
+		"uilayout": "editor-terminal",
+>>>>>>> 441fecf560cffc17a13c83c9286333504944c7b0
 		"uimessage1": "\u001b[32mYour Interactive Docker Host Terminal.\u001b[m\r\n"
 	},
 	"backend": {
-		"imageid": "docker",
-		"port": 8080,
-		"port": 8000
+		"imageid": "docker"
 	}
 }
