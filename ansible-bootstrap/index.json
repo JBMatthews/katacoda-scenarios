@@ -39,7 +39,7 @@
 			"text": "finish.md"
 		},
 		"assets": {
-          "client": [{"file": "README.md", "target": "/home/scrapbook/tutorial/", "chmod": "+x"}]
+          "client": [{"file": "README.md", "target": "~/", "chmod": "+x"}]
         }
 	},
 	"files": [
