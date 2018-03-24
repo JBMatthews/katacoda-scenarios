@@ -40,13 +40,13 @@
 		}
 	},
 	"files": {
-        "notes"
-    },
+        	"notes"
+    	},
 	"environment": {
 		"showdashboard": true,
-        "Dashbaord": "Dashboard",
+        	"Dashbaord": "Dashboard",
 		"uilayout": "terminal-iframe",
-    },
+    	},
 	"environment": {
 		"showdashboard": true,
 		"dashboards": [{"name": "localhost", "port": 8080}],
