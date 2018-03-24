@@ -40,10 +40,11 @@
 		}
 	},
 	"files": [
-    		"app.js"
+    		"notes"
   	],
 	"environment": {
 		"showdashboard": true,
+        "Dashbaord": "Dashboard",
 		"uilayout": "terminal-iframe",
 		"uimessage1": "\u001b[32mYour Interactive Docker Host Terminal.\u001b[m\r\n"
 	},

@@ -30,7 +30,8 @@
         ],
         "intro": {
             "text": "intro.md",
-            "courseData": "env-init-01.sh",
+            "courseData": "env-init.sh",
+            "code": "env-var.sh",
             "credits": ""
         },
         "finish": {
