@@ -2,7 +2,7 @@ To make our lives easier later, let us define the commands "a" and "t" for quick
 
 Connect to the Ansible container:
 
-`a() { docker exec -it ansible bash -c "echo 'PS1='\''ansible# '\' >> /root/.bashrc; bash"; }` {{execute HOST1}}
+`a() { docker exec -it ansible bash -c "echo 'PS1='\''ansible# '\' >> /root/.bashrc; bash"; }`{{execute HOST1}}
 
 Connect to the Target container:
 
