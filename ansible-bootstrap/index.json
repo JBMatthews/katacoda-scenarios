@@ -39,7 +39,7 @@
 			"text": "finish.md"
 		},
 		"assets": {
-      "client": [{"file": "*", "target": "/home/scrapbook", "chmod": "+x"}]
+      "client": [{"file": "playbook.yml", "target": "/home/scrapbook/tutorial", "chmod": "+x"}]
 		}
 	},
 	"files": [
