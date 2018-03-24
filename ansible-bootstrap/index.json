@@ -39,9 +39,9 @@
 			"text": "finish.md"
 		}
 	},
-	"files": [
+	"files": {
         "notes"
-  	],
+    },
 	"environment": {
 		"showdashboard": true,
         "Dashbaord": "Dashboard",
