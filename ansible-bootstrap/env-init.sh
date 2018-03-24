@@ -1,8 +1,8 @@
-apt-get -y update
-apt-get install software-properties-common
+apt -y update
+apt install software-properties-common
 apt-add-repository ppa:ansible/ansible
-apt-get update
-apt-get install ansible
+apt update
+apt install ansible
 apt install -y git
 cd /home/scrapbook/tutorial
 mkdir shared_volume
