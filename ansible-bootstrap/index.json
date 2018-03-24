@@ -39,13 +39,12 @@
 			"text": "finish.md"
 		},
 		"assets": {
-          "client": [{"file": "README.md", "target": "~/", "chmod": "+x"}]
+          "client": [{"file": "*", "target": "~/", "chmod": "+x"}]
         }
 	},
 	"files": [
         	"playbook.yml",
           "inventory",
-					"README.md"
     	],
 	"environment": {
 		"showdashboard": true,
