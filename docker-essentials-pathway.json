@@ -6,10 +6,16 @@
   "courses": [
     {
 
-      "external_link": "https://katacoda.com/virtuant/courses/ansible/01-ansible-getting-started",
       "title": "Introduction to Docker",
       "description": "Your journey begins here and it couldn't get any easier! Jump right in, when you're ready.",
       "course_id": "introduction-docker"
+
+    },
+    {
+
+      "title": "Practice Docker Basics",
+      "description": "Practice makes perfect, and Docker is no different. Let's get some more pratice with Docker Basics.",
+      "course_id": "practice-docker-basics"
 
     }
   ]
