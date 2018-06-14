@@ -1,4 +1,3 @@
-#### Step 3. Launching Containers From Images  
 1\. Now, we still don’t have a container running. We can verify that by running the command:
 
 ```

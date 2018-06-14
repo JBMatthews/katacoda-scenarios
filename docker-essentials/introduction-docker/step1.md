@@ -1,4 +1,3 @@
-##### Step 1. Exploring Docker Help 
 1. First, let’s look at Docker’s help menu in our shell
 
 `docker -h`{{execute}}
