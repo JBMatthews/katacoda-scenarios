@@ -1,34 +1,13 @@
-1\. Now, we still don’t have a container running. We can verify that by running the command:
+1\. Typically we work with images from the Docker Store, which is the default registry for the Docker Engine. Commands using just the image repository name work fine, like this:
 
-```
-$ docker ps
-```
+`docker pull hello-world`{{execute}}
 
-2\. So, let’s spin up a container. By typing `docker run` into our terminal, we can review the run command’s structure, just like we did with docker pull.
+> **NOTE:** Remember, `hello-world` is the repository name, which we are using as a short form of the full image name. The full name is `docker.io/hello-world:latest`. That breaks down into three parts:
+- `docker.io` - the hostname of the registry which stores the image;
+- `hello-world` - the repository name, in this case in `{imageName}` format;
+- `latest` - the image tag.
+If a tag isn't specified, then the default `latest` is used. If a registry hostname isn't specified then the default `docker.io` for Docker Store is used. If you want to use images with any other registry, you need to explicitly specify the hostname - the default is always Docker Store, you can't change to a different default registry.
 
-Output:
-```
-docker run [OPTIONS] IMAGE [COMMAND] [ARG…]
-```
+2\. With a local registry, the hostname and the custom port used by the registry is the full registry address, e.g. `localhost:5000`. 
 
-
-3\. Using our new ```docker/whalesay``` image, let’s spin up a container, referring back to the previous step, if needed, for the appropriate structuring. We won’t need to enact any options and we know the image name. The command we are going to use is cowsay and we are going to input ```hello-world```. It should look like this:
-
-`docker run docker/whalesay cowsay hello-world`{{execute}}
-
-Output:
-```
-< hello-world >
- ----- 
-    \
-     \
-      \     
-                    ##        .            
-              ## ## ##       ==            
-           ## ## ## ##      ===            
-       /""""""""""""""""___/ ===        
-  ~~~ {~~ ~~~~ ~~~ ~~~~ ~~ ~ /  ===- ~~~   
-       \______ o          __/            
-        \    \        __/             
-          \____\______/   
-```
+`hostname`{{execute}}
