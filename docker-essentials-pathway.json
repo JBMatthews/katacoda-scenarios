@@ -1,6 +1,6 @@
 {
   "icon": "fa-docker",
-  "pathwayTitle": "docker-essentials-pathway.json",
+  "pathwayTitle": "docker-essentials-pathway",
   "title": "Docker Essentials",
   "description": "Learning Docker is fun, when you have the right place to learn.",
   "courses": [
@@ -14,13 +14,3 @@
     }
   ]
 }
-
-//
-//{
-//
-//      "external_link": "https://katacoda.com/virtuant/courses/ansible/02-ansible-inventory",
-//      "title": "Ansible-First Playbook",
-//      "description": "Create an inventory file to tell Ansible where to run",
-//    "course_id": "02-ansible-first-playbook"
-//
-//    }
