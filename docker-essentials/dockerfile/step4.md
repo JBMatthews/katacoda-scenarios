@@ -1,5 +1,3 @@
-#### Step 4. Dockerizing an App
-
 When we are baking up an image from a dockerfile, we need to consider which files we might we preinstalled onto our image. For that we will copy files from the "build context," which is the directory containing the Dockerfile. We can use this to "dockerize" a application. Check this out!
 
 1. Let's now create a new directory and name it `helloworld`. 

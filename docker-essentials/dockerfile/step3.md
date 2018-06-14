@@ -1,5 +1,3 @@
-#### Step 3. Adding CMD and ENTRYPOINT
-
 This step will show us how to add two important Dockerfile commands: `CMD` and `ENTRYPOINT`. These two commands are often used and can be of great benefit.
 These commands allow us to set a default command to run in our container.
 

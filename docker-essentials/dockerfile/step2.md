@@ -1,5 +1,3 @@
-#### Step 2. History of a Dockerfile
-
 This may not seem like a big deal now, but image when your Dockerfile consist of many more layers. 
 
 1. Issue a command to see the history of our newest Dockerfile:

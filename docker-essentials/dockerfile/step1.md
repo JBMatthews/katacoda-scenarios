@@ -1,5 +1,3 @@
-#### Step 1. Create and Execute a Dockerfile  
-
 Creating a new Dockerfile is easy. Follow alone to make a new directory and initialize a new, empty Dockerfile.
 
 1. Create a directory to hold our Dockerfile:
