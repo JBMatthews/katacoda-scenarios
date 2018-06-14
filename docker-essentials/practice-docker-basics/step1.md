@@ -35,7 +35,7 @@ Try it out, like this:
 
 5\. It’s important that you understand what just happened. You can see it by listing your running containers, but this time you’re gonna use (`-a`) to see all containers:
 
-`docker ps -a`{{execute T1}}
+`docker ps -a`{{execute T2}}
 
 
 Notice that only Bert is still running, the interactive (`-it`) one. Ernie, the one we assigned (`-d`), appears to have been exited. This is because Ernie was run in detach mode and given a specific command. Ernie simpling started up, execute it’s command, and exited out.
