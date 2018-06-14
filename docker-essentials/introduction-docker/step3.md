@@ -1,12 +1,35 @@
-<pre class="file" data-filename="playbook.yml" data-target="replace"><blockquote>
+#### Step 3. Launching Containers From Images  
+1\. Now, we still don’t have a container running. We can verify that by running the command:
 
----
-- hosts: all
-  tasks:
-    - ping:
+```
+$ docker ps
+```
 
-</blockquote></pre>
+2\. So, let’s spin up a container. By typing `docker run` into our terminal, we can review the run command’s structure, just like we did with docker pull.
 
-4\. Now, "provision" your newest changes to Ansible on the machine by executing:
+Output:
+```
+docker run [OPTIONS] IMAGE [COMMAND] [ARG…]
+```
 
-`ansible-playbook -i 'localhost,' -c local playbook.yml`{{execute HOST1}}
+
+3\. Using our new ```docker/whalesay``` image, let’s spin up a container, referring back to the previous step, if needed, for the appropriate structuring. We won’t need to enact any options and we know the image name. The command we are going to use is cowsay and we are going to input ```hello-world```. It should look like this:
+
+`docker run docker/whalesay cowsay hello-world`{{execute}}
+
+Output:
+```
+< hello-world >
+ ----- 
+    \
+     \
+      \     
+                    ##        .            
+              ## ## ##       ==            
+           ## ## ## ##      ===            
+       /""""""""""""""""___/ ===        
+  ~~~ {~~ ~~~~ ~~~ ~~~~ ~~ ~ /  ===- ~~~   
+       \______ o          __/            
+        \    \        __/             
+          \____\______/   
+```

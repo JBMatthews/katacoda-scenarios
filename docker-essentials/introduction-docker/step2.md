@@ -1,12 +1,20 @@
-<pre class="file" data-filename="playbook.yml" data-target="replace"><blockquote>
+##### Step 2. Pulling Images Down From Docker Hub 
 
----
-- hosts: all
-  tasks:
-    - ping:
+1\. Type docker pull into our terminal and note the structural syntax to enacting the pull command:
 
-</blockquote></pre>
+Output:
 
-4\. Now, "provision" your newest changes to Ansible on the machine by executing:
+`docker pull [OPTIONS] NAME[:TAG|@DIGEST]`{{execute}}
 
-`ansible-playbook -i 'localhost,' -c local playbook.yml`{{execute HOST1}}
+
+2\. Now, let’s make our own pull request using the appropriate syntax we just learned. The name of the image we want to ```pull``` is ```docker/whalesay```, we don’t need to enact any options, and we won’t need to specify a tag this time.
+  NOTE: Whenever you don’t issue a specific tag, Docker defaults to latest.
+
+`docker pull docker/whalesay`{{execute}}
+
+
+>NOTE: If you do not have access to the internet, consult your instructor. 
+
+3\. Verify we have successfully pulled our image down using the previous command:
+
+`docker images`{{execute}}

@@ -1,5 +1,11 @@
-Ansible is a modern IT automation tool that uses SSH to connect to its targets. 
+## Introduction to Docker 
 
-Ansible is a relatively new member of a [larger family of IT automation tools](https://en.wikipedia.org/wiki/Comparison_of_open-source_configuration_management_software "Wikipedia: Config Management"). [This InfoWorld article from 2013](http://www.infoworld.com/article/2609482/data-center/data-center-review-puppet-vs-chef-vs-ansible-vs-salt.html "Infoworld: Puppet vs Chef vs Ansible vs Salt ) compares Puppet, Chef, Ansible and Salt.
+**Objective:** An overview of Docker’s functionality working with containers<br>
 
-In this tutorial, we will learn, how to prepare a target system, so an Ansible system can connect to it.
+**Preparation:** Open up two instances of your favorite shell, and a browser window<br>
+
+**Outcome:** Each participant will replicate a highlight demo of some basic functionality<br>
+
+**Data Files:** No data needed.<br>
+
+As we are learning, Docker is a container technology. When we talk about Docker, we are talking about containers. Remember, containers are spun up off of images, and images and spun up off of Dockerfiles. We will talk more about creating an image from a Dockerfile later, but for now let’s grab an existing image on Docker Hub and run a container.

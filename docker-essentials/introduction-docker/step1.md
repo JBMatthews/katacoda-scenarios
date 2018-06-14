@@ -1,12 +1,15 @@
-<pre class="file" data-filename="playbook.yml" data-target="replace"><blockquote>
+##### Step 1. Exploring Docker Help 
+1. First, let’s look at Docker’s help menu in our shell
 
----
-- hosts: all
-  tasks:
-    - ping:
+`docker -h`{{execute}}
 
-</blockquote></pre>
+2. Next, let’s check it see if we currently have any running containers
 
-4\. Now, "provision" your newest changes to Ansible on the machine by executing:
+`docker ps`{{execute}}
 
-`ansible-playbook -i 'localhost,' -c local playbook.yml`{{execute HOST1}}
+3. Finally, let’s see if we have any images in our local repository 
+
+`docker images`{{execute}}
+
+4. [OPTIONAL] Go through and try other Docker commands from the help list. If you will type ```docker <command>``` you will get to see the structure syntax.
+
