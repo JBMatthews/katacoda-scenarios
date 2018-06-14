@@ -32,7 +32,8 @@
         }
 	  },
 	"files": [
-    "Dockerfile"
+        "Dockerfile",
+        "helloworld.c"
     	],
 
 	"environment": {
@@ -45,7 +46,6 @@
 
 	"backend": {
 		"imageid": "docker"
-
 	}
 }
 

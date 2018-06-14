@@ -2,7 +2,7 @@ When we are baking up an image from a dockerfile, we need to consider which file
 
 1. Let's now create a new directory and name it `helloworld`. 
 
-2. Inside that directory we will create a new file, we will name that file ```helloworld.c```, and we copy the following content into it:
+2. Inside that directory we will create a new file, we will name that file `helloworld.c`, and we copy the following content into it:
 
 ```
 int main () {
@@ -11,7 +11,7 @@ return 0;
 }
 ```
 
-3. Now, from inside our ```helloworld``` directory, create a new Dockerfile and copy the following code into it:
+3. Now, from inside our `helloworld` directory, create a new "Dockerfile" and copy the following code into it:
 
 ```
 FROM ubuntu
@@ -22,22 +22,14 @@ RUN make helloworld
 CMD /helloworld
 ```
 
->NOTE: See how we are using the COPY command in our Dockerfile to bring our application into our container. This is called "dockerizing" and it's very useful.
+> **NOTE:** See how we are using the COPY command in our Dockerfile to bring our application into our container. This is called "dockerizing" and it's very useful.
 
 4. Okay, now for the fun part! We can test our project as we have done before. First, let's build out our Dockerfile to create the image we will use, like this:
 
-```
-$ docker build -t worldhello .
-```
+`docker build -t worldhello .`{{execute}}
 
 5. Run it! 
 
-```
-docker run worldhello
-```
+`docker run worldhello`{{execute}}
 
-Output:
-
-```
-Hello, world!
-```
+Well, did it work?

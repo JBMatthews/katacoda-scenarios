@@ -1,12 +1,6 @@
 Creating a new Dockerfile is easy. Follow alone to make a new directory and initialize a new, empty Dockerfile.
 
-1. Create a directory to hold our Dockerfile:
-
-```
-$ mkdir myimage
-```
-
-2. Create a Dockerfile inside this directory:
+1\. Create a Dockerfile inside this directory:
 
 ```
 $ cd myimage
@@ -15,19 +9,17 @@ $ vim Dockerfile
 
 >NOTE: Vim is used by default, feel free to use another available text editor. Ask the instructor if this is confusing.
   
-3. Copy the following text inside the new Dockerfile:
+2\. Copy the following text inside the new Dockerfile:
 
-```
+<pre class="file" data-filename="Dockerfile" data-target="append"><blockquote>
 FROM ubuntu
 RUN apt-get -y update
 RUN apt-get install -y figlet
-```
+</blockquote></pre>
 
-4. After saving the file, execute as follows:
+3\. After saving the file, execute as follows:
 
-```
-$ docker build -t myfiglet .
-```
+`docker build -t myfiglet .`{{execute}}
 
 Output:
 
@@ -49,15 +41,16 @@ Successfully built xxxxxxxxxxxx
 
 >NOTE: Number's will defer depending on the build number, per host.
 
-5. Now, the fun part! To confimr success, let's spin up a new container and give it a command, unique to Figlet:
+4\. Okay, spin up the new image using the (-it) to ensure our container is interactive. 
 
-```
-$ docker run -it myfiglet
-```
+`docker run -it myfiglet`{{execute}}
 
-```
-# figlet hello
-# exit
-```
 
->NOTE: Again, please understand that we haved used (`#`) here, because after we issused the run command and included the (`-it`) option, we are operating from inside the container itself. 
+5\. Now, the fun part! To confirm success, give it the following command, which is unique to Figlet:
+
+`figlet hello`{{copy}}
+
+_Pretty cool, huh?_
+
+And of course, be sure to exit out of your container:
+`exit`{{copy}}
