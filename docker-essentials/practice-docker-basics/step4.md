@@ -1,6 +1,6 @@
 We are going to add one more element here and put it all together now. Later in this lesson we will wipe it all away to start fresh. When we talk about Docker though it is important that we talk about Dockerfiles. Remember, Dockerfiles make images, images make containers. Let’s get to work!
 
-1. In your secondary window, download this lesson's Dockerfile or consult the instructor on where you can find it. Once you've secured your Dockerfile, use VIM (`vi`) to open it up into the editor. 
+1\. In your secondary window, download this lesson's Dockerfile or consult the instructor on where you can find it. Once you've secured your Dockerfile, use VIM (`vi`) to open it up into the editor. 
 
 Notice the sytaxt:
 
@@ -19,7 +19,7 @@ WORKDIR	    Set the default working directory for the container
 EXPOSE      Opens a port for linked containers
 ```
 
-2. Let’s talk about the ```build``` command. Enact the help menu for build to review syntax and addtional flag options:
+2\. Let’s talk about the ```build``` command. Enact the help menu for build to review syntax and addtional flag options:
 
 `docker build --help`{{T2}}
 
@@ -58,13 +58,13 @@ Options:
       --ulimit ulimit              Ulimit options (default [])
 ```
 
-3. Build an image from the Dockerfile now using the following command:
+3\. Build an image from the Dockerfile now using the following command:
 
 `docker build -t hello-world-example .`{{T2}}
 
 >NOTE: Ask your instructor if you don't know where to find your Dockerfile.
 
-4. Once, the image is successfully built, we want to spin up a container from it, like this:
+4\. Once, the image is successfully built, we want to spin up a container from it, like this:
 
 `docker run hello-world-example`{{T2}}
 
