@@ -49,7 +49,7 @@
   "environment": {
 	"showdashboard": true,
 	"dashboards": [{"name": "Browser", "port": 5000}],
-    "uilayout": "editor-terminal-iframe",
+    "uilayout": "editor-terminal",
 	"uimessage1": "\u001b[32mYour Interactive Host Terminal.\u001b[m\r\n"
 	},
 
