@@ -5,6 +5,7 @@
   "difficulty": "Intermediate",
   "time": "15-20 minutes",
   "details": {
+    
     "steps": [
       {
         "title": "Confirming Installation",
@@ -47,13 +48,19 @@
         {
           "file": "docker-compose.yml",
           "target": "~/"
+        },
+        {
+          "file": "Dockerfile",
+          "target": "~/"
         }
       ]
     }
   },
+    
   "files": [
     "docker-compose.yml"
   ],
+    
   "environment": {
 	"showdashboard": true,
 	"dashboards": [{"name": "Browser", "port": 8080}],

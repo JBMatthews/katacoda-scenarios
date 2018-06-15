@@ -1,11 +1,12 @@
-1. If you're a Mac or Windows user, the best way to install Compose and keep it up-to-date is Docker for Mac and Windows. Docker for Mac and Windows will automatically install the latest version of Docker Engine for you. Check to see if docker-compose is installed already, by using the version flag, like this:
+1\. If you're a Mac or Windows user, the best way to install Compose and keep it up-to-date is Docker for Mac and Windows. Docker for Mac and Windows will automatically install the latest version of Docker Engine for you. Check to see if docker-compose is installed already, by using the version flag, like this:
 
 `docker-compose --version`{{execute}}
 
 
-2. Alternatively, you can use the usual commands to install or upgrade Compose:
 
-`curl -L https://github.com/docker/compose/releases/download/1.14.0/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose`{{execute}}
+2\. Alternatively, you can use the usual commands to install or upgrade Compose:
+
+`curl -L https://github.com/docker/compose/releases/download/1.14.0/docker-compose-'uname -s' -'uname -m' > /usr/local/bin/docker-compose`{{execute}}
 
 `chmod +x /usr/local/bin/docker-compose`{{execute}}
 
