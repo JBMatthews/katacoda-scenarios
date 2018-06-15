@@ -27,7 +27,7 @@ if __name__ == "__main__":
     app.run(host="0.0.0.0", debug=True)
 </pre>
 
-3\. Create another file called `requirements.txt` in your project directory and paste this in:
+3\. Create another file called `requirements.txt` in your project directory and paste the following lines in it, like this:
 
 `touch requirements.txt`{{execute}}
 

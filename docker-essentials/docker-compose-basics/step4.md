@@ -1,7 +1,8 @@
 1\. Create a file called `docker-compose.yml` in your project directory and paste the following:
-`touch docker-compose.yml`
 
-<pre class="file" data-filename="app.py" data-target="replace">
+`touch docker-compose.yml`{{execute}}
+
+<pre class="file" data-filename="docker-compose.yml" data-target="replace">
 version: 3.6
 services:
   web:
