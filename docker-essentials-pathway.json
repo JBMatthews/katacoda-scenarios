@@ -29,7 +29,14 @@
 
       "title": "Deploying Registry Server",
       "description": "Once you've created an image, you'll need a place to store it. Launching a local registry is one way to do that.",
-      "course_id": "dockerfile"
+      "course_id": "deploying-registry-server"
+
+    },
+    {
+
+      "title": "Docker Compose Basics",
+      "description": "One of Docker's effective tools is Docker Compose, and you can learn the very basics here.",
+      "course_id": "docker-compose-basics"
 
     }
   ]

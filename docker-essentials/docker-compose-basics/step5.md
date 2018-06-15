@@ -16,6 +16,8 @@ web_1   |  * Restarting with stat
 
 Compose pulls a Redis image, builds an image for your code, and start the services you defined.
 
+
+
 2\. Enter `http://0.0.0.0:5000/` in a browser to see the application running, or simply use `curl`, like this:
 
 `curl localhost:5000`{{execute}}
@@ -27,5 +29,6 @@ You should see a message in your browser saying:
 ```console
 Hello World! I have been seen 1 times.
 ```
+
 
 3\. Refresh the page, and watch the number increment.

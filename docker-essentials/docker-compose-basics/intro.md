@@ -7,6 +7,6 @@
 
 **Preparation:** Make sure you have already installed both Docker Engine and Docker Compose. You don’t need to install Python or Redis, as both are provided by Docker images.
 
-**Outcome:** xx
+**Outcome:** By lab's end, the particpate will have successfully used Compose to start up a web server.
 
-**Data Files:** Ask Instructor
+**Data Files:** `docker-compose.yml` 

@@ -1,13 +1,13 @@
 {
 
-    "title": "Introduction to Docker",
-    "description": "Your journey begins here and it couldn't get any easier! Jump right in, when you're ready.",
-    "difficulty": "Beginner",
-    "time": "15 minutes",
+    "title": "Docker Compose Basics",
+    "description": "One of Docker's effective tools is Docker Compose, and you can learn the very basics here.",
+    "difficulty": "Intermediate",
+    "time": "15-20 minutes",
     "details": {
         "steps": [
             {
-                "title": "Installing",
+                "title": "Confirming Installation",
                 "text": "step1.md"
             },
             {

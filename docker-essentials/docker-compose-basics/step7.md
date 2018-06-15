@@ -22,11 +22,13 @@ composetest_redis_1   /usr/local/bin/run         Up
 composetest_web_1     /bin/sh -c python app.py   Up    5000->5000/tcp
 ```
 
+
 3\. The ```docker-compose run``` command allows you to run one-off commands for your services. For example, to see what environment variables are available to the web service:
 
 `docker-compose run web env`{{execute}}
 
 > **NOTE:** See ```docker-compose --help``` to see other available commands. 
+
 
 4\. If you started Compose with docker-compose up -d, you’ll probably want to stop your services once you’ve finished with them:
 
@@ -35,9 +37,7 @@ composetest_web_1     /bin/sh -c python app.py   Up    5000->5000/tcp
 
 5\. You can bring everything down, removing the containers entirely, with the down command. Pass ```--volumes``` to also remove the data volume used by the Redis container:
 
-    ```
-    $ docker-compose down --volumes
-    ```
+`docker-compose down --volumes`{{execute}}
 
 At this point, you have seen the basics of how Compose works.
 
