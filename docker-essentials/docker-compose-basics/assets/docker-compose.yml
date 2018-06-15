@@ -1,4 +1,3 @@
-## Docker Compose Redis Sever
 version: '3'
 services:
   web:
