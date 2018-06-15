@@ -42,24 +42,9 @@
     },
     "finish": {
       "text": "finish.md"
-    },
-    "assets": {
-      "client": [
-        {
-          "file": "docker-compose.yml",
-          "target": "~/"
-        },
-        {
-          "file": "Dockerfile",
-          "target": "~/"
-        }
-      ]
     }
+
   },
-    
-  "files": [
-    "docker-compose.yml"
-  ],
     
   "environment": {
 	"showdashboard": true,
