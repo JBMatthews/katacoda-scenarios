@@ -20,7 +20,7 @@ Compose pulls a Redis image, builds an image for your code, and start the servic
 
 2\. Enter `http://0.0.0.0:5000/` in a browser to see the application running, or simply use `curl`, like this:
 
-`curl localhost:5000`{{execute}}
+`curl http://localhost:5000`{{execute}}
 
 > **NOTE:** If you’re using Docker on Linux natively, then the web app should now be listening on port 5000 on your Docker daemon host. If `http://0.0.0.0:5000` doesn’t resolve, you can also try `http://localhost:5000`. If you’re using Docker Machine on a Mac, use `docker-machine ip MACHINE_VM` to get the IP address of your Docker host. Then, open `http://MACHINE_VM_IP:5000` in a browser.
 

@@ -3,7 +3,7 @@
 `touch docker-compose.yml`{{execute}}
 
 <pre class="file" data-filename="docker-compose.yml" data-target="replace">
-version: 3.6
+version: "3.6"
 services:
   web:
     build: .
