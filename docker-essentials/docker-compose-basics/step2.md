@@ -24,7 +24,7 @@ if __name__ == "__main__":
 
 3\. Create another file called `requirements.txt` in your project directory and paste this in:
 
-```
+```txt
 flask
 redis
 ```
