@@ -1,14 +1,15 @@
 In this step, you write a Dockerfile that builds a Docker image. The image contains all the dependencies the Python application requires, including Python itself.
 
 1\. In your project directory, create a file named Dockerfile and paste the following:
+`vi Dockerfile`{{execute}}
 
-```
+<pre class="file" data-filename="Dockerfile" data-target="replace">
 FROM python:3.4-alpine
 ADD . /code
 WORKDIR /code
 RUN pip install -r requirements.txt
 CMD ["python", "app.py"]
-```
+</pre>
 
 This tells Docker to:<br>
 - Build an image starting with the Python 3.4 image.

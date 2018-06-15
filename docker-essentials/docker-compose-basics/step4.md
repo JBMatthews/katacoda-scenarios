@@ -1,17 +1,18 @@
 1\. Create a file called `docker-compose.yml` in your project directory and paste the following:
+`touch docker-compose.yml`
 
-    ```yaml
-    version: 'X' //Use the chart above to make your selection.
-    services:
-      web:
-        build: .
-        ports:
-         - 5000:5000
-        volumes:
-         - .:/code
-      redis:
-        image: "redis:alpine"
-    ```
+<pre class="file" data-filename="app.py" data-target="replace">
+version: 3.6
+services:
+  web:
+    build: .
+    ports:
+     - 5000:5000
+    volumes:
+     - .:/code
+  redis:
+    image: "redis:alpine"
+</pre>
 
 This Compose file defines two services, `web` and `redis`. The web service:
 - Uses an image that’s built from the `Dockerfile` in the current directory.

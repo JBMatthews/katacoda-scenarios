@@ -14,13 +14,14 @@
 
 | Compose File Format  | Docker Engine |
 | -------------------- |:-------------:|
+| 3.6                  |    18.02.0+   |
+| 3.5                  |    17.12.0+   |
+| 3.4                  |    17.09.0+   |
 | 3.3                  |    17.06.0+   |
-| 3.0 ; 3.1            |    1.13.0+    |
-| 2.2                  |    1.13.0+    |
-| 2.1                  |    1.12.0+    |
-| 2.0                  |    1.10.0+    |
-| 1.0                  |    1.9.1+     |
 
 
->NOTE: Must use `sudo` and may have to elevate premissions, using `sudo -- su`. Remember, `docker` is root's password.  
+3\. You can confirm your version of Docker, like this:
+`docker --version`{{execute}}
+
+> **NOTE:** If your version of Docker isn't on the list, use the highest Compose File Format type.
 
