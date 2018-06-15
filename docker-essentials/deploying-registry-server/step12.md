@@ -2,6 +2,8 @@ Typing in all the options to start the registry can become tedious. An easier an
 
 1\. Start by creating another file in your current directory and naming it `docker-compose.yml`, like this:
 
+`mkdir docker-compose.yml`{{execute}}
+
 2\. Now, once you've got a `docker-compose.yml` file, open it with an editor and copy the following into it:
 
 ```.yaml
