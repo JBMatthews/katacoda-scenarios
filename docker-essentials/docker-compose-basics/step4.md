@@ -3,14 +3,12 @@
 `touch docker-compose.yml`{{execute}}
 
 <pre class="file" data-filename="docker-compose.yml" data-target="replace">
-version: "3.6"
+version: '3'
 services:
   web:
     build: .
     ports:
-     - 5000:5000
-    volumes:
-     - .:/code
+     - "5000:5000"
   redis:
     image: "redis:alpine"
 </pre>
