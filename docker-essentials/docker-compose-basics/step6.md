@@ -12,4 +12,5 @@ return 'Hello from Docker! I have been seen {} times.\n'.format(count)
 
 `curl localhost:5000`{{execute}}
 
-4\. Once you are done, before moving to the next step, be sure to bring Compose `down`.
+4\. Once you are done, before moving to the next step, be sure to bring Compose down, by issuing the following:
+`compose down`{{execute}}

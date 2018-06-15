@@ -4,7 +4,7 @@
 
 Output:
 
-```
+```console
 Pulling image redis...
 Building web...
 Starting composetest_redis_1...
@@ -24,7 +24,7 @@ Compose pulls a Redis image, builds an image for your code, and start the servic
 
 You should see a message in your browser saying:
 
-```
+```console
 Hello World! I have been seen 1 times.
 ```
 
