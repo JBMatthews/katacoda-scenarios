@@ -9,4 +9,4 @@
 
 **Outcome:** By lab's end, the particpate will have successfully used Compose to start up a web server.
 
-**Data Files:** `composetest`,  `docker-compose.yml`,  `app.py`, `Dockerfile`,  `requirements.txt`,``
+**Data Files:** `composetest`,  `docker-compose.yml`,  `app.py`, `Dockerfile`,  `requirements.txt`
