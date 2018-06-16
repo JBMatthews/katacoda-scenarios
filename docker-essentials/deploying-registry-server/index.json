@@ -75,7 +75,7 @@
 	},
 
 	"backend": {
-		"imageid": "docker-direct"
+		"imageid": "docker"
 
 	}
 }
