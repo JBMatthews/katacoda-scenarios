@@ -1,4 +1,4 @@
-1. With basic authentication, users cannot push or pull from the registry unless they are authenticated. If you try and pull an image without authenticating, you will get an error:
+1\. With basic authentication, users cannot push or pull from the registry unless they are authenticated. If you try and pull an image without authenticating, you will get an error:
 
 `docker pull localhost:5000/hello-world`{{execute}}
 
@@ -9,7 +9,7 @@ Using default tag: latest
 Error response from daemon: Get https://localhost:5000/v2/hello-world/manifests/latest: no basic auth credentials
 ```
 
-2. The result is the same for valid and invalid image names, so you can't even check a repository exists without authenticating. Logging in to the registry is the same `docker login` command you use for Docker Store, specifying the registry hostname:
+2\. The result is the same for valid and invalid image names, so you can't even check a repository exists without authenticating. Logging in to the registry is the same `docker login` command you use for Docker Store, specifying the registry hostname:
 
 `docker login registry.local:5000`{{execute}}
 
@@ -27,7 +27,7 @@ Login Succeeded
 Error response from daemon: login attempt to https://registry.local:5000/v2/ failed with status: 401 Unauthorized
 ```
 
-3. Now you're authenticated, you can push and pull as before:
+3\. Now you're authenticated, you can push and pull as before:
 
 `sudo docker pull localhost:5000/hello-world`{{execute}}
 

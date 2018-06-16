@@ -1,6 +1,6 @@
 Adding authentication to the registry is a similar process to adding SSL - we need to run the registry with access to the `htpasswd` file on the host, and configure authentication using environment variables.
 
-1. As before, we'll remove the existing container and run a new one with authentication configured:
+1\. As before, we'll remove the existing container and run a new one with authentication configured:
 
 `docker kill registry`{{execute}}
 
