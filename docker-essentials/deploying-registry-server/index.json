@@ -1,9 +1,9 @@
 {
 
-    "title": "Introduction to Docker",
-    "description": "Your journey begins here and it couldn't get any easier! Jump right in, when you're ready.",
+    "title": "Deploying Registry Server",
+    "description": "Learning to deploy a local registry starts here, and it couldn't be any easier.",
     "difficulty": "Beginner",
-    "time": "15 minutes",
+    "time": "15-20 minutes",
     "details": {
         "steps": [
             {
