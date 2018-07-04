@@ -1,0 +1,80 @@
+{
+
+    "title": "Ansible-Installing Wordpress",
+    "description": "Using Ansible to install Wordpress on our target host",
+    "difficulty": "Advanced",
+    "time": "30-45 minutes",
+    "details": {
+        "steps": [
+            {
+                "title": "Environment Configuration",
+                "text": "step1.md"
+            },
+            {
+                "title": "Installing Dependencies",
+                "text": "step2.md"
+            },
+            {
+                "title": "Installing PHP",
+                "text": "step3.md"
+            },
+            {
+                "title": "Installing MySQL",
+                "text": "step4.md"
+            },
+            {
+                "title": "Create a New Config File",
+                "text": "step5.md"
+            },
+						{
+                "title": "Installing Nginx",
+                "text": "step6.md"
+            },
+ 						{
+                "title": "Nginx Forwarding Fixes",
+                "text": "step7.md"
+            },
+ 						{
+                "title": "Adding Nginx Upstream",
+                "text": "step8.md"
+            },
+						{
+                "title": "Tasks & Handlers",
+                "text": "step9.md"
+            },
+						{
+                "title": "WordPress Download, Install and Configure",
+                "text": "step10.md"
+            },
+						{
+                "title": "Create MySQL User Credentials",
+                "text": "step11.md"
+            }
+				],
+
+        "intro": {
+            "text": "intro.md",
+            "code": "env-init.sh"
+
+        },
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+
+    "files": [
+        "playbook.yml",
+        "/templates/nginx/default"
+    ],
+
+    "environment": {
+        "showdashboard": true,
+        "dashboards": [{"name": "localhost", "port": 80, "host": "client" }],
+        "uilayout": "editor-terminal",
+        "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\u001b[m\r\n"
+    },
+    "backend": {
+        "imageid": "ubuntu",
+        "port":80
+    }
+}

@@ -1,0 +1,47 @@
+{
+
+	"title": "Ansible-Inventory",
+	"description": "Create an inventory file to tell Ansible where to run",
+	"difficulty": "Intermediate",
+	"time": "15-20 minutes",
+
+	"details": {
+		"steps": [{
+			"title": "Creating an Inventory",
+			"text": "step1.md"
+		}, {
+			"title": "Running Ad-hoc Tasks",
+			"text": "step2.md"
+		}, {
+			"title": "Running a Playbook",
+			"text": "step3.md"
+		}, {
+			"title": "Ansible Ensures",
+			"text": "step4.md"
+		}, {
+			"title": "Ensure a Package is Removed",
+			"text": "step5.md"
+		}],
+
+		"intro": {
+			"title": "Introduction",
+			"text": "intro.md",
+			"code": "env-init.sh"
+		},
+
+		"finish": {
+			"title": "Conclusion",
+			"text": "finish.md"
+		}
+	},
+	"environment": {
+		"showdashboard": true,
+		"uilayout": "editor-terminal",
+		"uimessage1": "\u001b[32mYour Interactive Host Terminal.\u001b[m\r\n"
+	},
+
+	"backend": {
+		"imageid": "ansible",
+		"port":22
+	}
+}

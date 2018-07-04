@@ -1,28 +1,27 @@
-Docker uses the hostname from the full image name to determine which registry to use. We can build images and include the local registry hostname in the image tag, or use the `docker tag` command to add a new tag to an existing image.
+Basic configuration
+To configure the container, you can pass additional or modified options to the docker run command.
 
-1\. These commands pull a public image from Docker Store, tag it for use in the private registry with the full name `localhost:5000/hello-world`, and then push it to the registry:
+The following sections provide basic guidelines for configuring your registry. For more details, see the registry configuration reference.
 
-`docker tag hello-world localhost:5000/hello-world`{{execute}}
+Start the registry automatically
+If you want to use the registry as part of your permanent infrastructure, you should set it to restart automatically when Docker restarts or if it exits. This example uses the --restart always flag to set a restart policy for the registry.
 
-`docker push localhost:5000/hello-world`{{execute}}
+$ docker run -d \
+  -p 5000:5000 \
+  --restart=always \
+  --name registry \
+  registry:2
+Customize the published port
+If you are already using port 5000, or you want to run multiple local registries to separate areas of concern, you can customize the registry’s port settings. This example runs the registry on port 5001 and also names it registry-test. Remember, the first part of the -p value is the host port and the second part is the port within the container. Within the container, the registry listens on port 5000 by default.
 
-2\. When you push the image to your local registry, you'll see similar output to when you push a public image to the Hub:
+$ docker run -d \
+  -p 5001:5000 \
+  --name registry-test \
+  registry:2
+If you want to change the port the registry listens on within the container, you can use the environment variable REGISTRY_HTTP_ADDR to change it. This command causes the registry to listen on port 5001 within the container:
 
-```
-The push refers to a repository [localhost:5000/hello-world]
-a55ad2cda2bf: Pushed
-cfbe7916c207: Pushed
-fe4c16cbf7a4: Pushed
-latest: digest: sha256:79e028398829da5ce98799e733bf04ac2ee39979b238e4b358e321ec549da5d6 size: 948
-```
-
-3\. On the local machine, you can remove the new image tag and the original image, and pull it again from the local registry to verify it was correctly stored:
-
-```
-$ docker rmi localhost:5000/hello-world
-$ docker rmi hello-world
-$ docker pull localhost:5000/hello-world
-```
-
-That exercise shows the registry works correctly, but at the moment it's not very useful because all the image data is stored in the container's writable storage area, which will be lost when the container is removed. To store the data outside of the container, we need to mount a host directory when we start the container.
-
+$ docker run -d \
+  -e REGISTRY_HTTP_ADDR=0.0.0.0:5001 \
+  -p 5001:5001 \
+  --name registry-test \
+  registry:2
