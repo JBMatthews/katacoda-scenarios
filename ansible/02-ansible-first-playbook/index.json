@@ -37,7 +37,7 @@
         }
 	  },
 	"files": [
-    "playbook.yml"
+        "playbook.yml"
     	],
 
 	"environment": {
@@ -50,7 +50,6 @@
 
 	"backend": {
 		"imageid": "docker",
-    "port": 8080
 
 	}
 }

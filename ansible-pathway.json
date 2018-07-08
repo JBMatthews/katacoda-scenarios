@@ -7,27 +7,27 @@
     {
 
       "title": "Ansible-Getting Started",
-      "description": "Experience Ansible by learning how to connect a target host",
+	  "description": "Experience Ansible by learning how to connect a target host",
       "course_id": "01-ansible-getting-started"
 
     },
     {
 
       "title": "Ansible-First Playbook",
-      "description": "Create an inventory file to tell Ansible where to run",
+      "description": "Create our first playbook to work with Ansible",
       "course_id": "02-ansible-first-playbook"
 
     },
     {
 
       "title": "Ansible-Inventory",
-      "description": "Create our first playbook to work with Ansible",
+	  "description": "Create an inventory file to tell Ansible where to run",
       "course_id": "03-ansible-inventory"
 
     },
     {
 
-      "title": "Ansible-Installing Wordpress ",
+      "title": "Ansible-Installing Wordpress",
       "description": "Using Ansible to install Wordpress on our target host",
       "course_id": "04-ansible-wordpress"
 
