@@ -6,7 +6,6 @@
   "courses": [
     {
 
-      "external_link": "https://katacoda.com/jbmatthews/courses/ansible/01-ansible-getting-started",
       "title": "Ansible-Getting Started",
       "description": "Experience Ansible by learning how to connect a target host",
       "course_id": "01-ansible-getting-started"
@@ -14,7 +13,6 @@
     },
     {
 
-      "external_link": "https://katacoda.com/jbmatthews/courses/ansible/02-ansible-inventory",
       "title": "Ansible-First Playbook",
       "description": "Create an inventory file to tell Ansible where to run",
       "course_id": "02-ansible-first-playbook"
@@ -22,7 +20,6 @@
     },
     {
 
-      "external_link": "https://katacoda.com/jbmatthews/courses/ansible/03-ansible-first-playbook",
       "title": "Ansible-Inventory",
       "description": "Create our first playbook to work with Ansible",
       "course_id": "03-ansible-inventory"
@@ -30,7 +27,6 @@
     },
     {
 
-      "external_link": "https://katacoda.com/jbmatthews/courses/ansible/04-ansible-wordpress",
       "title": "Ansible-Installing Wordpress ",
       "description": "Using Ansible to install Wordpress on our target host",
       "course_id": "04-ansible-wordpress"
