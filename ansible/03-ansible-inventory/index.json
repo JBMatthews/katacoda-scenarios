@@ -4,7 +4,6 @@
 	"description": "Create an inventory file to tell Ansible where to run",
 	"difficulty": "Intermediate",
 	"time": "15-20 minutes",
-
 	"details": {
 		"steps": [{
 			"title": "Creating an Inventory",
@@ -41,7 +40,6 @@
 	},
 
 	"backend": {
-		"imageid": "ansible",
-		"port":22
-	}
+		"imageid": "ansible"	
+    }
 }
