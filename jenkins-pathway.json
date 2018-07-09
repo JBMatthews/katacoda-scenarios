@@ -1,0 +1,42 @@
+{
+  "icon": "fa-jenkins",
+  "title": "Jenkins",
+  "description": "Jenkins pathway",
+  "courses": [
+    {
+      "title": "Build Docker Images with Jenkins",
+      "description": "Learn how to build and deploy Docker images with Jenkins",
+      "course_id": "jenkins-build-docker-images",
+      "pathway_id": "jenkins",
+      "id": "jenkins-build-docker-images"
+    },
+    {
+      "title": "Create a Pipelne in Jenkins",
+      "description": "Learn how to create and deploy a Pipeline",
+      "course_id": "jenkins-pipelines-hello-world",
+      "pathway_id": "jenkins",
+      "id": "jenkins-pipelines-hello-world"
+    },
+    {
+      "title": "Jenkins Environment Upgrade",
+      "description": "A developer enviroment with and updated Jenkins",
+      "course_id": "jenkins-env-upgrade",
+      "pathway_id": "jenkins",
+      "id": "jenkins-env-upgrade-id"
+    },
+    {
+      "title": "Add Development Metrics with Jenkins",
+      "description": "Learn how to do dev metrics in Jenkins",
+      "course_id": "jenkins-development-metrics",
+      "pathway_id": "jenkins",
+      "id": "jenkins-development-metrics"
+    },
+    {
+      "title": "Jenkins Automation of a Job",
+      "description": "Learn how to do a hello world automated by Jenkins",
+      "course_id": "jenkins-automated-job-hello-world",
+      "pathway_id": "jenkins",
+      "id": "jenkins-automated-job-hello-world"
+    }
+  ]
+}
