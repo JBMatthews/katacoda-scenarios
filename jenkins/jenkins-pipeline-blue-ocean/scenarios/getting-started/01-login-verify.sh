@@ -1,1 +1,0 @@
-[ `oc whoami` == "developer" ] && echo "done"

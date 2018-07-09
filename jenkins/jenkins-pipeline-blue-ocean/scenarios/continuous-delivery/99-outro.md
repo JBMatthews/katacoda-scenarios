@@ -1,1 +1,0 @@
-Move on to the next scenario, **Debugging Applications** to learn about how to debug microservices.
