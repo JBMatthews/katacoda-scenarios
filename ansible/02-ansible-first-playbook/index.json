@@ -49,7 +49,7 @@
 	},
 
 	"backend": {
-		"imageid": "docker",
+		"imageid": "docker"
 
 	}
 }
