@@ -1,8 +1,10 @@
-1\. Type `docker pull` into our terminal and note the structural syntax to enacting the `pull` command:
+1\. Type `docker pull`{{execute}} into our terminal and note the structural syntax to enacting the `pull` command:
 
 Output:
 
-`docker pull [OPTIONS] NAME[:TAG|@DIGEST]`{{execute}}
+```
+$  docker pull [OPTIONS] NAME[:TAG|@DIGEST]
+```
 
 
 2\. Now, let’s make our own `pull` request using the appropriate syntax we just learned. The name of the image we want to ```pull``` is ```docker/whalesay```, we don’t need to enact any options, and we won’t need to specify a tag this time.
